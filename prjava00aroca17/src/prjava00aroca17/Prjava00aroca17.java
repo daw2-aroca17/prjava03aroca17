@@ -5,18 +5,33 @@
  */
 package prjava00aroca17;
 
-/**
- *
- * @author ubu2
- */
+import java.net.*;
 public class Prjava00aroca17 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Projecte de Aroca17");
-        System.out.println("Versio 0.1 del projecte prjava00aroca17");
+    // TODO code application logic here
+    System.out.println("Projecte de aroca17");
+    System.out.println("versió 0.2 del projecte prjava00aroca17");
+    try {
+        InetAddress addr = InetAddress.getLocalHost();
+        String ipAddr = addr.getHostAddress();
+        String hostname = addr.getHostName();
+        System.out.println("hostname="+hostname);
+        System.out.println(" " + ipAddr);
+        System.out.println("Nom de l'usuari: " + System.getProperty("user.name"));
+        System.out.println("Carpeta Personal: " + System.getProperty("user.home"));
+        System.out.println("Sistema operatiu: " + System.getProperty("os.name"));
+        System.out.println("Versió OS: " + System.getProperty("os.version"));
     }
-    
+    catch (UnknownHostException e) {
+        e.printStackTrace();
+    }  
+    }
 }
+
+    
+    
+
