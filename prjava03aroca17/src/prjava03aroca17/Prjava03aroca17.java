@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package prjava03aroca17; 
 import java.awt.*;        // using AWT containers and components 
 import java.awt.event.*;  // using AWT events and listener interfaces 
@@ -37,8 +32,8 @@ public class Prjava03aroca17 extends Frame
         // "this" Frame fires WindowEvent its registered WindowEvent listener 
         // "this" Frame adds "this" object as a WindowEvent listener 
  
-      setTitle("prjava03cognom17");  // "this" Frame sets title 
-      setSize(250, 100);        // "this" Frame sets initial size 
+      setTitle("nova finestra prjava03aroca17");  // "this" Frame sets title 
+      setSize(450, 100);        // "this" Frame sets initial size 
       setVisible(true);         // "this" Frame shows 
    } 
  
